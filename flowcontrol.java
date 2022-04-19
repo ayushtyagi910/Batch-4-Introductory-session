@@ -1,25 +1,16 @@
-import java.util.Scanner;
-public class flowcontrolstatements5 
-    {
-        public static void main(String[] args)
+class flowcontrolstatements3 {
+    public static void main(String args[]) {
+        if(args.length==0)
         {
-        Scanner sc=new Scanner(System.in);
-        char ch =sc.next().charAt(0);
-        scanner.close();
-        if((ch>=48 && ch<=57) || ch == 45)
-        {
-            System.out.print("Digit");
-
-        }
-        else if((ch>='a' && ch<='z')||(ch>='A' && ch<='Z'))
-        {
-            System.out.print("Alphabet");
+            System.out.println("No values");
         }
         else
         {
-            System.out.print("Special character");
-
+            for(String i:args)
+            {
+                System.out.print(i+",");
+            }
         }
+        
     }
-
 }
